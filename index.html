@@ -1,0 +1,215 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+
+
+
+        <a href="index.html" class="header-brand">Brand name</a>
+        <a href="#" class="header-brand2">Some describing words</a>
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="#">Daily menu</a></li>
+                <li><a href="#">Cakes</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script>
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+
+        function openPopup() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        function submit() {
+            var email = document.getElementById("email").value;
+            var isValid = isEmail(email);
+            if (isValid) {
+                document.getElementById("error").style.display = "none";
+                window.open('EasyVeganRecipes.pdf', '_blank'); //pune doc intr-un tab nou
+            } else {
+                document.getElementById("error").style.display = "block";
+            }
+
+        }
+    </script>
+
+
+
+
+    <section class="backgr_image">
+        <div>
+
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 box">
+                    <div class="product_name">
+                        <p>Fearless Burger</p>
+                    </div>
+                    <img src="img6.jpeg">
+                    <p>
+                        List of ingredients
+                    </p>
+                    <p class="price">
+                        Price
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 box">
+                    <div class="product_name">
+                        <p>Hummus Hero</p>
+                    </div>
+                    <img src="img7.jpeg">
+                    <p>
+                        List of ingredients
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3 box">
+                    <div class="product_name">
+                        <p>Friendly Soup</p>
+                    </div>
+                    <img src="img8.jpeg">
+                    <p>
+                        List of ingredients
+                    </p>
+                </div>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3 box">
+                    <div class="product_name">
+                        <p>Fearless Burger</p>
+                    </div>
+                    <img src="img6.jpeg">
+                    <p>
+                        List of ingredients
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 box">
+                    <div class="product_name">
+                        <p>Hummus Hero</p>
+                    </div>
+                    <img src="img7.jpeg">
+                    <p>
+                        List of ingredients
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3 box">
+                    <div class="product_name">
+                        <p>Friendly Soup</p>
+                    </div>
+                    <img src="img8.jpeg">
+                    <p>
+                        List of ingredients
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="whyus">
+        <div class="row whyus_row">
+            <div class="col-lg-4">
+                <h4>Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4>Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4>Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="footer_image">
+
+        <div class="socialmedia">
+            <a href="facebook.com"><img src="facebook.svg"></a>
+            <a href="twitter.com"><img src="twitter.svg"></a>
+
+        </div>
+
+        <div class="footer_links">
+            <ul>
+                <li style="font-weight: 600;">
+                    Adress
+                </li>
+                <li>
+                    ...(adress)
+                </li>
+                <li style="font-weight: 600;">
+                    Phone number
+                </li>
+                <li>
+                    ....(phone number)
+                </li>
+                <li style="font-weight: 600;">
+                    Email
+                </li>
+                <li>
+                    ....(email)
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <button class="openPopup" onclick="openPopup()">FREE "Easy Vegan Recipes"</button>
+    <div class="overlay" id="overlay">
+        <div class="emailForm">
+            <p>Subscribe</p>
+            <input class="email" id="email" type="text" placeholder="Your Email..." name="email" required>
+            <div>
+                <button class="submit" onclick="submit()">Submit</button>
+                <button class="closePopup" onclick="closePopup()">Close</button>
+            </div>
+            <div class="error" id="error">Invalid email</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
