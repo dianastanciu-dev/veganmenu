@@ -241,13 +241,14 @@ p.price {
 }
 
 .product_name {
-    background-color: #96e072;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    /*background-color: #96e072;*/
+    background-color: #b3c186;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
 .product_name p {
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 300px;
     color: #131B28;
     text-align: center;
