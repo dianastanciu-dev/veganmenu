@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+
+}
+
+body{
+    background-color: #dcd5d0;
 }
 
 header {
@@ -221,6 +226,7 @@ button:hover {
     border-radius: 15px;
     padding: 0px;
     margin: 3px;
+    background-color: #edece8;
 }
 
 .box p {
@@ -243,8 +249,8 @@ p.price {
 .product_name {
     /*background-color: #96e072;*/
     background-color: #b3c186;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .product_name p {
