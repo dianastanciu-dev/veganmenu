@@ -218,6 +218,7 @@ button:hover {
 
 .box {
     border: 2px solid rgba(168, 181, 185, 0.3);
+    border-radius: 15px;
     padding: 0px;
     margin: 3px;
 }
@@ -241,6 +242,8 @@ p.price {
 
 .product_name {
     background-color: #96e072;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .product_name p {
