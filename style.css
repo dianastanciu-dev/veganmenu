@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #dcd5d0;
+    background-color: #f9eae1;
 }
 
 header {
@@ -224,11 +224,14 @@ button:hover {
 }
 
 .box {
+    /*
     border: 2px solid rgba(168, 181, 185, 0.3);
+*/
+    border: none;
     border-radius: 15px;
     padding: 0px;
     margin: 3px;
-    background-color: #edece8;
+    background-color: #f7f2f3;
 }
 
 .box p {
